@@ -1,0 +1,104 @@
+#block-pct{
+    text-align: center;
+}
+
+#logo{
+    width:35%;
+    height:35%;
+
+    animation-name: logo-anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform: rotate(-2deg);
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes logo-anim {
+    50% {transform: rotate(2deg);}
+    100%{transform: rotate(-2deg)}
+}
+
+#text{
+    font-family: 'Roboto', sans-serif;
+    font-size:40px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.84);
+
+    animation-name: text-tran;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes text-tran {
+    0% {color:rgba(0, 0, 0, 0.84)}
+    50%{color: rgba(0, 0, 0, 0.63)}
+    100%{color:rgba(0, 0, 0, 0.84) }
+}
+
+
+
+
+.block-border{
+    border:2px solid black;
+    width:200px;
+    height:180px;
+    display: inline-block;
+
+}
+#block-block{
+    text-align: center;
+}
+
+#block-L{
+    margin-right:50px;
+}
+
+#block-R{
+    margin-left: 50px;
+}
+
+#click-L{
+    font-family: 'Roboto', sans-serif;
+    margin-right:125px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.84);
+}
+#click-R{
+    font-family: 'Roboto', sans-serif;
+    margin-left:125px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.84);
+}
+
+#img-1{
+    width:100%;
+    height:100%;
+
+}
+
+#block-L:hover{
+    width:400px;
+    height:400px;
+    cursor:pointer;
+}
+
+#block-R:hover{
+    width:400px;
+    height:400px;
+    cursor:pointer;
+}
+
+footer{
+    background-color: #686868;
+    position: absolute;
+    height:150px;
+    width:100%;
+    bottom:0;
+}
+
+#footer-text{
+    text-align: right;
+    color: white;
+    margin:30px 40px 0 0;
+    font-family: 'Roboto', sans-serif;
+}
